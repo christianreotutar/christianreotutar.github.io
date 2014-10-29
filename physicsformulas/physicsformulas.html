@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Physics II Formulas </title>
+
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			extensions: ["tex2jax.js"],
+			jax: ["input/TeX","output/HTML-CSS"],
+			tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+		});
+	</script>
+	<script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+	<script src="javascript/masonry.pkgd.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+	<style>
+	body { 
+		font-family: 'Raleway', sans-serif; 
+		margin:0;
+	}
+	h1 {
+		padding:0;
+		margin:0;
+		text-align:center;
+		margin-top: 5px;
+	}
+	h2 {
+		padding:0;
+		margin:0;
+		margin-left:2%;
+		margin-top: 2%;
+		color:teal;
+	}
+	h3 {
+		margin:0;
+		margin-left:7%;
+		margin-top:1%;
+	}
+	hr { width: 98%; }
+	blockquote { 
+		padding: 1%;
+		margin:0;
+		margin-right:1%;
+		margin-left:7%;
+		text-align:left;
+	}
+
+	.posthalf {
+		width:31%;
+		min-width:350px;
+		background-color:#e1e1e1;
+		margin:1%;
+		padding:0;
+		padding-bottom: 1%;
+		border-radius:2.5px;
+	}
+
+	.left {
+		display: inline-block;
+		vertical-align:top;
+	}
+
+	.more {
+		margin:0;
+		margin-left: 10%;
+	}
+
+	.midterm1 { background-color: #BDDFEB; }
+	.midterm2 { background-color: #ffcf9c; }
+	.midterm3 { background-color: #93DB70; }
+
+	.keycircle {
+		border-radius:50%;
+		height: 15px;
+		width: 15px;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+
+	.keycirclewords {
+		width: 100px;
+		float: left;
+		margin: 0;
+		padding: 0;
+		margin-left:1px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="title" style="text-align:center; margin: 0 auto;">
+		<div> Physics II </div>
+	</div>
+
+	<div style="text-align:center">
+		<div id="key" style="display: inline-block;">
+			<div class="keycircle midterm1"></div> <div class="keycirclewords">Midterm 1</div>
+			<div class="keycircle midterm2"></div> <div class="keycirclewords">Midterm 2</div>
+			<div class="keycircle midterm3"></div> <div class="keycirclewords">Midterm 3</div>
+		</div>
+	</div>
+
+	<div id="container" style="clear: both;">
+		<div class="posthalf midterm1">
+			<h1> Electrostatics </h1>
+			<hr/>
+
+			<h2> Coulomb's Law </h2>
+			<blockquote> $\vec{F_{12}} = {1\over 4\pi \epsilon_0} {q_1q_2\over r_{12}^2} \hat{r}$ </blockquote>
+			<h2> Gauss' Law </h2>
+			<blockquote> $\int\vec{E}\cdot d\vec{A} = {Q_{enclosed} \over \epsilon_0}$</blockquote>
+			<blockquote> $E = {1\over 4\pi \epsilon_0} {q\over r^2}$ (point charge)</blockquote>
+			<blockquote> $E = {\lambda\over 2\pi\epsilon_0r}$ (infinite line)</blockquote>
+			<blockquote> $E = {\sigma\over 2\epsilon_0}$ (infinite sheet)</blockquote>
+
+		</div>
+
+		<div class="posthalf midterm2">
+			<h1> Electric Potential Energy </h1>
+			<hr/>
+
+			<blockquote> $W_{AB} = {q_1q_2 \over 4\pi \epsilon_0} ({1\over r_A} - {1\over r_B})$</blockquote>
+			<blockquote> $\Delta U = -W$</blockquote>
+			<blockquote> $U_r = \Delta U_{\infty r} = {q_1q_2\over 4\pi \epsilon_0 r}$ (pair of charged particles)</blockquote>
+			<blockquote> $U_{System} = k \sum\limits_{pairs} {q_iq_j \over r_{ij}}$(system of N particles)</blockquote>
+			<blockquote> ${\Delta U} = - \int_A^B{q\vec{E} \cdot d\vec{l}}$</blockquote>
+		</div>
+
+		<div class="posthalf midterm2">
+			<h1> Electric Potential </h1>
+			<hr/>
+
+			<h2> Electric Potential Difference </h2>
+			<blockquote> $\Delta V_{A\rightarrow B} = $V(B) - V(A)$ = {\Delta U_{A\rightarrow B} \over q} = - \int_A^B{\vec{E} \cdot d\vec{l}}$ </blockquote>
+			<blockquote> $V(r) = k {Q\over r}$ (point charge)</blockquote>
+			<blockquote> $\vec{E} = -\vec{\triangledown}V$ (i.e. $E_x = - {\delta V\over \delta x}$)</blockquote>
+			<blockquote> $\vec{E} = {\vec{F}\over q}$ </blockquote>
+		</div>
+
+		<div class="posthalf midterm2">
+			<h1> Conductors and Capacitance</h1>
+			<hr/>
+
+			<blockquote> $C = {Q \over V}$ </blockquote>
+			<blockquote> $E = {Q \over \epsilon_0A} = {\sigma \over \epsilon_0} = {\Delta V \over d}$ </blockquote>
+			<blockquote> $Q = \lambda L = \sigma A = \rho V$</blockquote>
+			<blockquote> $\Delta V_{A\rightarrow B} = -\int_A^B {\vec{E} \cdot d\vec{l}}$ (potential difference)</blockquote>
+
+			<h2> Potential Energy</h2>
+			<blockquote> $U = {1 \over 2}QV = {1 \over 2} {Q^2 \over C} = {1\over 2} {CV^2}$</blockquote>
+			<blockquote> $U = {Q^2\over 2C} = {1\over 2}C{\Delta V}^2$ (U stored in charged capacitor)</blockquote>
+			<blockquote> $u = {1\over 2} \epsilon_0 E^2$ (energy density) </blockquote>
+		</div>
+
+		<div class="posthalf midterm2">
+			<h1> Capacitors </h1>
+			<hr/>
+			<blockquote> $C = {\epsilon_0 A \over d}$ </blockquote>
+			<blockquote> $C_{new} = \kappa C_{old}$ </blockquote>
+			<blockquote> Dielectric medium: replace vacuum permittivity $\epsilon_0$ with $\kappa\epsilon_0$ </blockquote>
+			<h2> Parallel </h2>
+				<blockquote> $V_{equiv} = V_1 = V_2$</blockquote>
+				<blockquote> $Q_{equiv} = Q_1 + Q_2$</blockquote>
+				<blockquote> $C_{equivalent} = C_1+C_2$</blockquote>
+			<h2> Series </h2>
+				<blockquote> $Q_{equiv} = Q_1 = Q_2$</blockquote>
+				<blockquote> $V_{equiv} = V_1 + V_2$</blockquote>
+				<blockquote> ${1\over C_{equivalent}} = {1\over C_1}+{1\over C_2}$</blockquote>
+		</div>
+
+		<div class="posthalf midterm2">
+			<h1> Electric Current</h1>
+			<hr/>
+
+			<blockquote> $I = {dq\over dt}$ (unit: Ampere, C/s)</blockquote>
+			<blockquote> $J = {I\over A_{cross}}$</blockquote>
+			<blockquote> $I = \int{\vec{J}\cdot d\vec{A}}$ (electric current through cross section) </blockquote>
+			<blockquote> $J = n_{e}ev_{drift}$ ($n_e = N_{avogadro} {\rho_{mass} \over M}$, current density)</blockquote>
+			<blockquote> $J = \sigma E$ ($\sigma =$ conductivity)</blockquote> 
+
+			<h2> Resistance </h2>
+				<blockquote> $R = {V \over I}$ (Ohms law)</blockquote>
+				<blockquote> $R = {1\over\sigma}{L\over A}$ (where ${1\over\sigma} = \rho =$ resistivity) </blockquote>
+			<h2> Parallel </h2>
+				<blockquote> $V_{equiv} = V_1 = V_2$</blockquote>
+				<blockquote> $I_{equiv} = I_1 + I_2$</blockquote>
+				<blockquote> ${1\over R_{equivalent}} = {1\over R_1}+{1\over R_2}$</blockquote>
+			<h2> Series </h2>
+				<blockquote> $I_{equiv} = I_1 = I_2$</blockquote>
+				<blockquote> $V_{equiv} = V_1 + V_2$</blockquote>
+				<blockquote> $R_{equivalent} = R_1+R_2$</blockquote>
+			<h2> Power </h2>
+				<blockquote> $P = {dU \over dt} = IV$ (unit: Watt)</blockquote>
+				<blockquote> $P_{dissipated} = I^2R$ </blockquote>
+		</div>
+
+		<div class="posthalf midterm2">
+			<h1>Kirchoff's Rules</h1>
+			<hr/>
+			<blockquote>$\Delta V_{loop} = 0$ for any closed loop</blockquote>
+			<blockquote>$\Sigma I_{in} = \Sigma I_{out}$ at a junction</blockquote>
+			<h2> Real Batteries </h2>
+			<blockquote> $V_b = V_0 ({{R \over r} \over {1+ {R \over r}}}) $ </blockquote>
+		</div>
+
+		<div class="posthalf midterm2">
+			<h1> RC Circuits </h1>
+			<hr/>
+			<blockquote> $\tau = RC$ </blockquote>
+			<h2>Charging Capacitor </h2>
+			<blockquote> $q(t) = CV_b(1-e^{-t \over \tau})$ </blockquote>
+			<blockquote> $I(t) = {V_b \over R} e^{-t \over \tau}$ </blockquote>
+
+			<h2> Discharging Capacitor </h2>
+			<blockquote> $q(t) = CV_be^{-t \over \tau} = q_0e^{-t \over \tau}$ </blockquote>
+			<blockquote> $I(t) = -{V_b \over R} e^{-t \over \tau} = -{q_0 \over \tau} e^{-t \over \tau}$ </blockquote>
+
+			<h2> Power </h2>
+			<blockquote> $P_R(t) = RT^2e^{-2t \over \tau}$ </blockquote>
+			<blockquote> $P_C(t) = [{q_0 \over c} (1-e^{-t \over \tau})] I_0 e^{-t \over \tau}$ </blockquote>
+			<blockquote> $P_{Batt}(t) = P_R(t) + P_C(t) = V_b I_0 e^{-t \over \tau}$</blockquote>
+		</div>
+
+		<div class="posthalf midterm2">
+			<h1> Magnetism </h1>
+			<hr/>
+			<h2> Lorentz Force</h2>
+			<blockquote> $\vec{F} = q (E + \vec{v} \times B)$ </blockquote>
+			<blockquote> $R = {mv \over qB}$ (Radius in a magnetic field)</blockquote>
+			
+			<h2> Centripetal Motion </h2>
+			<blockquote> $\vec{F}_{net} = m \vec{a} $ </blockquote>
+			<blockquote> $a_c = {v^2 \over r}$ </blockquote>
+			<blockquote> $k = {1 \over 2}mv^2$ </blockquote>
+		</div>
+
+		<div class="posthalf midterm3">
+			<h1> Forces/Torques on Currents </h1>
+			<hr/>
+			<h2> Force </h2>
+			<blockquote> $\vec{F_{wire}} = I\vec{L} \times \vec{B}$ </blockquote>
+			<h2> Torque </h2>
+			<blockquote> $\mu = NI\vec{A}$ (magnetic dipole moment)</blockquote>
+			<blockquote> $\tau = IABsin\theta = \vec{\mu} \times \vec{B}$ </blockquote>
+			<h2> Potential Energy </h2>
+			<blockquote> $\int_{\theta_1}^{\theta_2} \tau = \int_{\theta_1}^{\theta_2} (-\mu B sin\theta) d\theta$ </blockquote>
+			<blockquote> $\Delta U = - \vec{\mu} \cdot \vec{B}$ </blockquote>
+		</div>
+
+		<div class="posthalf midterm3">
+			<h1> Biot Savart </h1>
+			<hr/>
+			<blockquote> $\mu_0 = 4\pi \times 10^{-7}$</blockquote>
+			<h2> Magnetic Field </h2>
+			<blockquote> $d\vec{B} = {\mu_0 I \over 4\pi r^2} d\vec{s} \times \hat{r}$</blockquote>
+			<blockquote> $B = {\mu_0 I \over 2 \pi R} $</blockquote>
+		</div>
+
+		<div class="posthalf midterm3">
+			<h1> Ampere's Law </h1>
+			<hr/>
+			<blockquote> $\int\limits_{loop} \vec{B} \cdot d\vec{l} = \mu_0 I_{enclosed}$</blockquote>
+			<h2> Inside of a Wire </h2>
+			<blockquote> $B = {\mu_0 I r \over 2\pi a^2}$ for r < a, radius of wire</blockquote>
+			<blockquote> $B = {\mu_0 I \over 2 \pi r}$ for r > a</blockquote>
+			<h2> Infinite Sheet of Current </h2>
+			<blockquote> $B = {{1\over 2}n I \mu_0}$ </blockquote>
+		</div>
+
+		<div class="posthalf midterm3">
+			<h1> Motional EMF </h1>
+			<hr/>
+
+			<blockquote> $E = vB$ </blockquote>
+			<h2> Conducting Bar </h2>
+			<blockquote> $\varepsilon_{conducting bar} = vBL$ (potential difference)</blockquote>
+			<blockquote> $I_{conducting bar} = {vBL \over R}$ (from Ohm's Law) </blockquote>
+			<blockquote> $P_{conducting bar} = {(VBL)^2 \over R}$ </blockquote>
+			<h2> Other Shapes </h2>
+			<blockquote> $\varepsilon_{wire loop} = vL(B_{bottom} - B_{top})$ </blockquote>
+			<blockquote> $\varepsilon_{generator} = \omega A_{loop}Bcos(\omega t)$ </blockquote>
+		</div>
+
+		<div class="posthalf midterm3">
+			<h1> Faraday's Law </h1>
+			<hr/>
+
+			<blockquote> $\Phi_B = \int\vec{B} \cdot d\vec{A} $</blockquote>
+			<blockquote> $\varepsilon_{induced} = -{d\Phi_B \over dt}$</blockquote>
+			<blockquote> $\int\vec{E} \cdot d\vec{l} = -{d\Phi_B \over dt} = {d\over dt}\int\vec{B}\cdot d\vec{A}$ </blockquote>
+
+			<h2> Lenz' Law </h2>
+			<blockquote> $\varepsilon_{induced}$ opposes $d\Phi_B \over dt$ </blockquote>
+		</div>
+
+		<div class="posthalf midterm3">
+			<h1> Induction & RL Circuits </h1>
+			<hr/>
+
+			<blockquote> $ L = {\Phi_B \over I}$ (units: Henry(H) = T-m^2/A)</blockquote>
+			<blockquote> $\varepsilon = -L{dI\over dt}$ </blockquote>
+
+		</div>
+	</div>
+
+	<script>
+		MathJax.Hub.Queue(
+			[test]
+		);
+		function test() {
+			var container = document.querySelector('#container');
+			var masonry;
+			masonry = new Masonry( container, {
+			  // options
+			  itemSelector: '.posthalf'
+			});
+		}
+	</script>
+</body>
