@@ -14,6 +14,7 @@
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 	<script src="javascript/masonry.pkgd.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
 	<style>
@@ -98,9 +99,9 @@
 
 	<div style="text-align:center">
 		<div id="key" style="display: inline-block;">
-			<div class="keycircle midterm1"></div> <div class="keycirclewords">Midterm 1</div>
-			<div class="keycircle midterm2"></div> <div class="keycirclewords">Midterm 2</div>
-			<div class="keycircle midterm3"></div> <div class="keycirclewords">Midterm 3</div>
+			<div class="keycircle midterm1" id="mid1"></div> <div class="keycirclewords">Midterm 1</div>
+			<div class="keycircle midterm2" id="mid2"></div> <div class="keycirclewords">Midterm 2</div>
+			<div class="keycircle midterm3" id="mid3"></div> <div class="keycirclewords">Midterm 3</div>
 		</div>
 	</div>
 
@@ -242,9 +243,12 @@
 			<h1> Forces/Torques on Currents </h1>
 			<hr/>
 			<h2> Force </h2>
-			<blockquote> $\vec{F_{wire}} = I\vec{L} \times \vec{B}$ </blockquote>
+			<blockquote> $\vec{F_{wire}} = I\vec{L} \times \vec{B}$ (I carrying wire in B field)</blockquote>
+			<blockquote> $F_{loop} = 0$ (without Torque)</blockquote>
 			<h2> Torque </h2>
+			<blockquote> recall $\tau = \vec{r}\times\vec{F}$</blockquote>
 			<blockquote> $\mu = NI\vec{A}$ (magnetic dipole moment)</blockquote>
+			<blockquote> Use RH rule to find direction of $\vec{A}$: fingers in dir of I </blockquote>
 			<blockquote> $\tau = IABsin\theta = \vec{\mu} \times \vec{B}$ </blockquote>
 			<h2> Potential Energy </h2>
 			<blockquote> $\int_{\theta_1}^{\theta_2} \tau = \int_{\theta_1}^{\theta_2} (-\mu B sin\theta) d\theta$ </blockquote>
@@ -257,7 +261,11 @@
 			<blockquote> $\mu_0 = 4\pi \times 10^{-7}$</blockquote>
 			<h2> Magnetic Field </h2>
 			<blockquote> $d\vec{B} = {\mu_0 I \over 4\pi r^2} d\vec{s} \times \hat{r}$</blockquote>
-			<blockquote> $B = {\mu_0 I \over 2 \pi R} $</blockquote>
+			<blockquote> $d\vec{s}$ in dir of $I$ and $\hat{r}$ from $d\vec{s}$ to $P$ </blockquote>
+			<blockquote> $B = {\mu_0 I \over 2 \pi R} $ (current carrying wire)</blockquote>
+			<blockquote> $R$ is perpindicular distance to $P$ </blockquote>
+			<blockquote> Use RH to find dir of $\vec{B}$: thumb in dir of $I$ </blockquote>
+			<blockquote> Use $d\vec{B}$ to solve $B$</blockquote>
 		</div>
 
 		<div class="posthalf midterm3">
@@ -313,7 +321,7 @@
 			<blockquote> $ V_L = V_be^{-Rt\over L} = V_be^{-t\over\tau} $ </blockquote>
 			<h3> Battery Opened </h3>
 			<blockquote> $ I(t) = {V_b\over R} e^{-t\over\tau} $ </blockquote>
-			<blockquote> $ \tau = {L\over 2R} $ </blockquote>
+			<blockquote> $ \tau = {L\over R_{eq}} $ </blockquote>
 			<blockquote> $ V_L(t) = -2V_be^{-t\over\tau} $ </blockquote>
 
 			<h2> Energy </h2>
@@ -340,7 +348,7 @@
 			<blockquote> $ q(t) = q_0e^{-\alpha t}cos(\omega t) $ </blockquote>
 		</div>
 
-		<div class="posthalf midterm 3">
+		<div class="posthalf midterm3">
 			<h1> AC Circuits </h1>
 			<hr/>
 
@@ -355,11 +363,57 @@
 
 			<h3> Generator + Inductor </h3>
 			<blockquote> $X_L = {\omega L}$ (reactance) </blockquote>
-			<blockquote> ${dI_L\over dt} = {\epsilon_msin(\omega t) \over L}$ <blockquote>
+			<blockquote> ${dI_L\over dt} = {\epsilon_msin(\omega t) \over L}$ </blockquote>
 			<blockquote> $I_L = {-E_mcos(\omega t) \over X_L}$ </blockquote>
 
 			<h2> Phasors </h2>
 			<blockquote> Inductor leads Resistor/Current leads Capacitor by 90</blockquote>
+			<blockquote> $Z = \sqrt{R^2 + (X_L - X_C)^2} (impedence) $</blockquote>
+			<blockquote> $\tan{\phi} = {X_L-X_C \over R} $ </blockquote>
+			<blockquote> $I_m = {\epsilon_m \over \sqrt{R^2 + (X_L - X_C)^2}} $</blockquote>
+		</div>
+
+		<div class="posthalf midterm3">
+			<h1> Resonance and Power </h1>
+			<hr/>
+
+			<h2> Resonance </h2>
+			<blockquote> When $I_m$ is a maximum </blockquote>
+			<blockquote> $\omega = \omega_0$ </blockquote>
+			<blockquote> $\omega_0 = {1\over \sqrt{LC}}$</blockquote>
+			<blockquote> Z is minimized and $X_C = X_L$</blockquote>
+			<blockquote> $\phi = 0$ </blockquote>
+
+			<h2> Max Current </h2>
+			<blockquote> $I_m = {\epsilon_m\over Z} = {\epsilon_m\cos{\phi}\over R}$ </blockquote>
+			<blockquote> $X = {\omega\over\omega_0}$ </blockquote>
+			<blockquote> $Q^2 = {L\over R^2C} $ </blockquote>
+			<blockquote> $I_m = {\epsilon_m\over R} {1\over \sqrt{1 + {Q^2(X^2-1)^2\over X^2}}} $ </blockquote>
+
+			<h2> Power </h2>
+			<blockquote> $\lt P_{generator}\gt = \lt P_{resistor}\gt = {1\over2}I_m^2E_m \cos{\phi}$ </blockquote>
+			<blockquote> $\lt P_{inductor}\gt = \lt P_{capacitor}\gt = 0 $ </blockquote>
+			<blockquote> $\lt P_{generator}\gt = {\epsilon_{rms}^2\over R} {X^2\over X^2 + Q^2(X^2-1)^2} $ </blockquote>
+			<h3> Root Mean Square </h3>
+			<blockquote> $\epsilon_{rms} = {\epsilon_m\over\sqrt{2}} $ </blockquote>
+			<blockquote> $I_{rms} = {I_m\over\sqrt{2}} $ </blockquote>
+
+			<h2> Q Factor </h2>
+			<blockquote> $Q = 2\pi [{U_{max}\over\Delta U}] $ </blockquote>
+			<blockquote> $Q^2 = {L\over R^2C}$ for driven LCR only </blockquote>
+			<blockquote> $V_{L_{max}} = V_{C_{max}} = Q\epsilon_m$ at resonance only</blockquote>
+
+			<h2> Ideal Transformer </h2>
+			<blockquote> $V_s = {N_s\over N_p} V_p$ </blockquote>
+			<blockquote> $I_p = {N_s\over N_p} I_s$ </blockquote>
+		</div>
+
+		<div class="posthalf midterm3">
+			<h1> Displacement Current & EM Waves </h1>
+			<hr/>
+
+			<blockquote> $\int{\vec{B}\cdot d\vec{l}} = \mu_0(I_{enclosed} + I_{displaced})$ </blockquote>
+			<blockquote> $I_{displaced} = \epsilon_0 {d\Phi_t\over dt} $ </blockquote>
 		</div>
 	</div>
 
@@ -375,5 +429,11 @@
 			  itemSelector: '.posthalf'
 			});
 		}
+
+
+		$( "#mid1" ).click( function() {
+		  	$( ".midterm1.posthalf" ).css("visibility", "hidden");
+		  	$( ".midterm1.posthalf" ).css("height", "0");
+		});
 	</script>
-</body>
+</body> 
