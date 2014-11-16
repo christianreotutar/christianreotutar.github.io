@@ -10,11 +10,13 @@
 			tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
 		});
 	</script>
-	<script type="text/javascript"
-            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-	<script src="javascript/masonry.pkgd.min.js"></script>
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script src="javascript/masonry.pkgd.min.js"></script>
+	<script src="/path/to/isotope.pkgd.min.js"></script>
+	<script src="physics.js"></script>
+
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='physics.css' rel='stylesheet' type='text/css'>
 </head>
@@ -343,31 +345,4 @@
 			<blockquote> $I_{displaced} = \epsilon_0 {d\Phi_t\over dt} $ </blockquote>
 		</div>
 	</div>
-
-	<script>
-		MathJax.Hub.Queue(
-			[test]
-		);
-
-		var masonry;
-		function test() {
-			var container = document.querySelector('#container');
-			masonry = new Masonry( container, {
-			  // options
-			  itemSelector: '.posthalf'
-			});
-		}
-
-		$('#mid1').click( function() {
-			var $midterm1 = $('.posthalf.midterm1');
-			masonry.remove( $midterm1 );
-			masonry.layout();
-		});
-
-		$('#mid2').click( function() {
-			var $midterm2 = $('.posthalf.midterm2');
-			masonry.remove( $midterm2 );
-			masonry.layout();
-		});
-	</script>
 </body>
