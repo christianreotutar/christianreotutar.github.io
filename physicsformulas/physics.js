@@ -6,7 +6,7 @@ $(document).ready( function() {
 
     var $container = $('#container');
     $container.masonry({
-        columnWidth: 1,
+        columnWidth: 8,
         itemSelector: '.posthalf'
     });
     var masonry = $container.data('masonry');
