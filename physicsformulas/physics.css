@@ -1,7 +1,4 @@
-
-html {
-    overflow-y: scroll;
-}
+html { overflow-y: scroll; }
 
 body { 
     font-family: 'Raleway', sans-serif; 
@@ -18,8 +15,12 @@ h2 {
     margin:0;
     margin-left:2%;
     margin-top: 2%;
-    color:teal;
 }
+
+.midterm1 h2 { color: teal; }
+.midterm2 h2 { color: #8C001A; }
+.midterm3 h2 { color: green; }
+
 h3 {
     margin:0;
     margin-left:7%;
