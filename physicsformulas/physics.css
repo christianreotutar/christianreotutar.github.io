@@ -20,6 +20,7 @@ h2 {
 .midterm1 h2 { color: teal; }
 .midterm2 h2 { color: #8C001A; }
 .midterm3 h2 { color: green; }
+.final h2 { color: #8C001A; }
 
 h3 {
     margin:0;
@@ -58,7 +59,8 @@ blockquote {
 
 .midterm1 { background-color: #BDDFEB; }
 .midterm2 { background-color: #ffcf9c; }
-.midterm3 { background-color: #93DB70; }
+.midterm3 { background-color: #BDECB6; }
+.final { background-color: #DBC4B2; }
 
 .keycircle {
     border-radius:50%;
