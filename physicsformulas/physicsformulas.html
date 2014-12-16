@@ -67,6 +67,7 @@
 
 			<h2> Electric Potential Difference </h2>
 			<blockquote> $\Delta V_{A\rightarrow B} = $V(B) - V(A)$ = {\Delta U_{A\rightarrow B} \over q} = - \int_A^B{\vec{E} \cdot d\vec{l}}$ </blockquote>
+			<blockquote> $U = qV$ </blockquote>
 			<blockquote> $V(r) = k {Q\over r}$ (point charge)</blockquote>
 			<blockquote> $\vec{E} = -\vec{\triangledown}V$ (i.e. $E_x = - {\delta V\over \delta x}$)</blockquote>
 			<blockquote> $\vec{E} = {\vec{F}\over q}$ </blockquote>
@@ -78,7 +79,7 @@
 
 			<blockquote> $C = {Q \over V}$ </blockquote>
 			<blockquote> $E = {Q \over \epsilon_0A} = {\sigma \over \epsilon_0} = {\Delta V \over d}$ </blockquote>
-			<blockquote> $Q = \lambda L = \sigma A = \rho V$</blockquote>
+			<blockquote> $Q = \lambda L = \sigma A = \rho V$ ($V$ is volume) </blockquote>
 			<blockquote> $\Delta V_{A\rightarrow B} = -\int_A^B {\vec{E} \cdot d\vec{l}}$ (potential difference)</blockquote>
 
 			<h2> Potential Energy</h2>
@@ -110,7 +111,7 @@
 			<blockquote> $I = {dq\over dt}$ (unit: Ampere, C/s)</blockquote>
 			<blockquote> $J = {I\over A_{cross}}$</blockquote>
 			<blockquote> $I = \int{\vec{J}\cdot d\vec{A}}$ (electric current through cross section) </blockquote>
-			<blockquote> $J = n_{e}ev_{drift}$ ($n_e = N_{avogadro} {\rho_{mass} \over M}$, current density)</blockquote>
+			<blockquote> $J = n_{e}qv_{drift} = \rho v$ ($n_e = N_{avogadro} {\rho_{mass} \over M}$, current density)</blockquote>
 			<blockquote> $J = \sigma E$ ($\sigma =$ conductivity)</blockquote> 
 
 			<h2> Resistance </h2>
@@ -126,7 +127,7 @@
 				<blockquote> $R_{equivalent} = R_1+R_2$</blockquote>
 			<h2> Power </h2>
 				<blockquote> $P = {dU \over dt} = IV$ (unit: Watt)</blockquote>
-				<blockquote> $P_{dissipated} = I^2R$ </blockquote>
+				<blockquote> $P_{dissipated} = I^2R = {V^2\over R}$ (in Resistor) </blockquote>
 		</div>
 
 		<div class="posthalf midterm2">
@@ -151,7 +152,7 @@
 			<blockquote> $I(t) = -{V_b \over R} e^{-t \over \tau} = -{q_0 \over \tau} e^{-t \over \tau}$ </blockquote>
 
 			<h2> Power </h2>
-			<blockquote> $P_R(t) = RT^2e^{-2t \over \tau}$ </blockquote>
+			<blockquote> $P_R(t) = RI^2e^{-2t \over \tau}$ </blockquote>
 			<blockquote> $P_C(t) = [{q_0 \over c} (1-e^{-t \over \tau})] I_0 e^{-t \over \tau}$ </blockquote>
 			<blockquote> $P_{Batt}(t) = P_R(t) + P_C(t) = V_b I_0 e^{-t \over \tau}$</blockquote>
 		</div>
@@ -242,7 +243,7 @@
 			<blockquote> $ L = {\Phi_B \over I}$ (units: Henry(H) = T-m^2/A)</blockquote>
 			<blockquote> $\varepsilon = -L{dI\over dt}$ </blockquote>
 			<blockquote> $ B = \mu_0nI $</blockquote>
-			<blockquote> $ \Phi_B = \mu_0n^2z\pi r^2I $ </blockquote>
+			<blockquote> $ \Phi_B = \mu_0n^2z\pi r^2I = LI$ </blockquote>
 			<blockquote> $ L = {\Phi_B \over I} = \mu_0n^2z\pi r^2 $ </blockquote>
 
 			<h2> RL Circuits </h2>
@@ -343,7 +344,7 @@
 			<hr/>
 
 			<blockquote> $\int{\vec{B}\cdot d\vec{l}} = \mu_0(I_{enclosed} + I_{displaced})$ </blockquote>
-			<blockquote> $I_{displaced} = \epsilon_0 {d\Phi_t\over dt} $ </blockquote>
+			<blockquote> $I_{displaced} = \epsilon_0 {d\Phi_E\over dt} $ </blockquote>
 			<blockquote> $\vec{S} = {1\over\mu_0} \vec{E}\times\vec{B}$ (Poynting Vector) </blockquote>
 			<blockquote> $\frac{\partial^2{E_x}}{\partial{z^2}} = \mu_0\epsilon_0\frac{\partial^2{E_x}}{\partial{t^2}}$ </blockquote>
 			<blockquote> $v = {1\over\sqrt{\mu_0\epsilon_0}}$ </blockquote>
@@ -389,8 +390,8 @@
 
 			<blockquote> $\theta_i = \theta_r$ (reflection)</blockquote>
 			<blockquote> $n = \frac{c}{v} = \frac{\sqrt{\mu\epsilon}}{\sqrt{\mu_0\epsilon_0}}$ </blockquote>
-			<blockquote> $n_2\sin{(\theta_2)} = n_2\sin{(\theta_1)}$ (Snell's Law) </blockquote>
-			<blockquote> $\theta_c = \arcsin{(\frac{n_2}{n_1})}$ (Critical angle) </blockquote>
+			<blockquote> $n_2\sin{(\theta_2)} = n_1\sin{(\theta_1)}$ (Snell's Law) </blockquote>
+			<blockquote> $\theta_c = \arcsin{(\frac{n_2}{n_1})}$ (Critical angle, total internal reflection) </blockquote>
 			<blockquote> $\tan{(\theta_1)} = \frac{n_2}{n_1}$ (Brewster's Angle) </blockquote>
 
 		</div>
@@ -450,6 +451,7 @@
 
 			<blockquote> $hf = KE_{max} + \phi$ (Photoelectric Eq) </blockquote>
 			<blockquote> cutoff frequency: min. $f$ s.t. $KE_{max} = 0$ </blockquote>
+			<blockquote> charging stops when $KE_{max} = eV_{max}$ </blockquote>
 			<blockquote> $p = \frac{hf}{c} = \frac{h}{\lambda}$ (Momentum)</blockquote>
 			<blockquote> $\lambda = \frac{h}{p}$ (de Broglie wavelength)</blockquote>
 			<blockquote> $\Delta \lambda = \frac{h}{mc}(1 - \cos{(\phi)}$ (Compton Shift)</blockquote>
@@ -460,7 +462,7 @@
 
 			<h2> Infinitely Deep Potential Energy Well </h2>
 			<blockquote> $E_n = ( \frac{h^2}{8mL^2} ) n^2$, for $n = 1, 2, 3, ...$ </blockquote>
-			<blockquote> $hf = \Delta E = E_{high} - E_{low}$ </blockquote>
+			<blockquote> $hf = \frac{hc}{\lambda} = \Delta E = E_{high} - E_{low}$ </blockquote>
 		</div>
 	</div>
 </body>
