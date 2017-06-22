@@ -4,22 +4,22 @@
 	<title> Physics II Formulas </title>
 
 	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-			extensions: ["tex2jax.js"],
-			jax: ["input/TeX","output/HTML-CSS"],
-			tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
-		});
+	MathJax.Hub.Config({
+		extensions: ["tex2jax.js"],
+		jax: ["input/TeX","output/HTML-CSS"],
+		tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+	});
 	</script>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
-	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?..."></script>
 	<script src="javascript/masonry.pkgd.min.js"></script>
-	<script src="/path/to/isotope.pkgd.min.js"></script>
-	<script src="physics.js"></script>
+	<script src="javascript/isotope.pkgd.min.js"></script>
+	<script src="javascript/physics.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-	<link href='physics.css' rel='stylesheet' type='text/css'>
+	<link href='stylesheets/physics.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -70,7 +70,7 @@
 			<blockquote> $\Delta V_{A\rightarrow B} = $V(B) - V(A)$ = {\Delta U_{A\rightarrow B} \over q} = - \int_A^B{\vec{E} \cdot d\vec{l}}$ </blockquote>
 			<blockquote> $U = qV$ </blockquote>
 			<blockquote> $V(r) = k {Q\over r}$ (point charge)</blockquote>
-			<blockquote> $\vec{E} = -\vec{\triangledown}V$ (i.e. $E_x = - {\delta V\over \delta x}$)</blockquote>
+			<blockquote> $\vec{E} = -\vec{\nabla}V$ (i.e. $E_x = - {\delta V\over \delta x}$)</blockquote>
 			<blockquote> $\vec{E} = {\vec{F}\over q}$ </blockquote>
 		</div>
 
@@ -96,13 +96,13 @@
 			<blockquote> $C_{new} = \kappa C_{old}$ </blockquote>
 			<blockquote> Dielectric medium: replace vacuum permittivity $\epsilon_0$ with $\kappa\epsilon_0$ </blockquote>
 			<h2> Parallel </h2>
-				<blockquote> $V_{equiv} = V_1 = V_2$</blockquote>
-				<blockquote> $Q_{equiv} = Q_1 + Q_2$</blockquote>
-				<blockquote> $C_{equivalent} = C_1+C_2$</blockquote>
+			<blockquote> $V_{equiv} = V_1 = V_2$</blockquote>
+			<blockquote> $Q_{equiv} = Q_1 + Q_2$</blockquote>
+			<blockquote> $C_{equivalent} = C_1+C_2$</blockquote>
 			<h2> Series </h2>
-				<blockquote> $Q_{equiv} = Q_1 = Q_2$</blockquote>
-				<blockquote> $V_{equiv} = V_1 + V_2$</blockquote>
-				<blockquote> ${1\over C_{equivalent}} = {1\over C_1}+{1\over C_2}$</blockquote>
+			<blockquote> $Q_{equiv} = Q_1 = Q_2$</blockquote>
+			<blockquote> $V_{equiv} = V_1 + V_2$</blockquote>
+			<blockquote> ${1\over C_{equivalent}} = {1\over C_1}+{1\over C_2}$</blockquote>
 		</div>
 
 		<div class="posthalf midterm2">
@@ -116,19 +116,19 @@
 			<blockquote> $J = \sigma E$ ($\sigma =$ conductivity)</blockquote> 
 
 			<h2> Resistance </h2>
-				<blockquote> $R = {V \over I}$ (Ohms law)</blockquote>
-				<blockquote> $R = {1\over\sigma}{L\over A}$ (where ${1\over\sigma} = \rho =$ resistivity) </blockquote>
+			<blockquote> $R = {V \over I}$ (Ohms law)</blockquote>
+			<blockquote> $R = {1\over\sigma}{L\over A}$ (where ${1\over\sigma} = \rho =$ resistivity) </blockquote>
 			<h2> Parallel </h2>
-				<blockquote> $V_{equiv} = V_1 = V_2$</blockquote>
-				<blockquote> $I_{equiv} = I_1 + I_2$</blockquote>
-				<blockquote> ${1\over R_{equivalent}} = {1\over R_1}+{1\over R_2}$</blockquote>
+			<blockquote> $V_{equiv} = V_1 = V_2$</blockquote>
+			<blockquote> $I_{equiv} = I_1 + I_2$</blockquote>
+			<blockquote> ${1\over R_{equivalent}} = {1\over R_1}+{1\over R_2}$</blockquote>
 			<h2> Series </h2>
-				<blockquote> $I_{equiv} = I_1 = I_2$</blockquote>
-				<blockquote> $V_{equiv} = V_1 + V_2$</blockquote>
-				<blockquote> $R_{equivalent} = R_1+R_2$</blockquote>
+			<blockquote> $I_{equiv} = I_1 = I_2$</blockquote>
+			<blockquote> $V_{equiv} = V_1 + V_2$</blockquote>
+			<blockquote> $R_{equivalent} = R_1+R_2$</blockquote>
 			<h2> Power </h2>
-				<blockquote> $P = {dU \over dt} = IV$ (unit: Watt)</blockquote>
-				<blockquote> $P_{dissipated} = I^2R = {V^2\over R}$ (in Resistor) </blockquote>
+			<blockquote> $P = {dU \over dt} = IV$ (unit: Watt)</blockquote>
+			<blockquote> $P_{dissipated} = I^2R = {V^2\over R}$ (in Resistor) </blockquote>
 		</div>
 
 		<div class="posthalf midterm2">
